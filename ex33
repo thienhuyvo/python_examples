@@ -1,0 +1,30 @@
+"""def add_numbers(my_range, change):
+	i = 0
+	numbers = []
+	while i < my_range:
+		print "At the top i is %d" % i
+		numbers.append(i)
+
+		i = i + change
+		print "Numbers now: ", numbers
+		print "At the bottom i is %d" % i
+
+	print "The numbers: "
+
+	for num in numbers:
+		print num
+
+add_numbers(int(raw_input("How many number do you want to add? ")), 1)
+"""
+
+def add_numbers(my_range, change):
+	numbers = []
+	for i in range(0, my_range, change):
+		numbers.append(i)
+
+	print "The numbers: "
+
+	for num in numbers:
+		print num
+
+add_numbers(int(raw_input("How many number do you want to add? ")), 1)
